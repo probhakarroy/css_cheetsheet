@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: 70% 30%;
+            /*
+            column-gap: 1em;
+            row-gap: 1em;
+            */
+            gap: 1em;
+        }
+
+        .wrapper > div{
+            background-color: #eeeeee;
+            color: black;
+            padding: 1em;
+        }
+
+        .wrapper > div:nth-child(odd){
+            background: #dddddd;
+
+        }
+    </style>
+</head>
+<body>
+   <div class="wrapper">
+       <div>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo enim animi pariatur voluptatum consectetur beatae dolore? Illo iusto eos consectetur eaque voluptates fuga autem obcaecati ipsum blanditiis, soluta aspernatur corporis fugiat dicta consequuntur nesciunt vero cupiditate voluptatem quas sapiente odio asperiores quasi. Doloribus eaque repellat voluptates? Numquam nostrum laudantium blanditiis explicabo expedita id amet ad fugiat! Delectus perferendis odio iusto iure voluptas veniam qui quisquam? Molestiae dolorem alias neque asperiores optio sequi ex quis magni at, in exercitationem eligendi perspiciatis.
+       </div>
+
+       <div>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quam molestias consequuntur temporibus, libero molestiae tempore fugiat cum at. Sunt eveniet, qui repellendus illo ad beatae consectetur id quaerat amet!
+       </div>
+
+       <div>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo enim animi pariatur voluptatum consectetur beatae dolore? Illo iusto eos consectetur eaque voluptates fuga autem obcaecati ipsum blanditiis, soluta aspernatur corporis fugiat dicta consequuntur nesciunt vero cupiditate voluptatem quas sapiente odio asperiores quasi. Doloribus eaque repellat voluptates? Numquam nostrum laudantium blanditiis explicabo expedita id amet ad fugiat! Delectus perferendis odio iusto iure voluptas veniam qui quisquam? Molestiae dolorem alias neque asperiores optio sequi ex quis magni at, in exercitationem eligendi perspiciatis.
+       </div>
+
+       <div>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quam molestias consequuntur temporibus, libero molestiae tempore fugiat cum at. Sunt eveniet, qui repellendus illo ad beatae consectetur id quaerat amet!
+       </div>
+
+       <div>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo enim animi pariatur voluptatum consectetur beatae dolore? Illo iusto eos consectetur eaque voluptates fuga autem obcaecati ipsum blanditiis, soluta aspernatur corporis fugiat dicta consequuntur nesciunt vero cupiditate voluptatem quas sapiente odio asperiores quasi. Doloribus eaque repellat voluptates? Numquam nostrum laudantium blanditiis explicabo expedita id amet ad fugiat! Delectus perferendis odio iusto iure voluptas veniam qui quisquam? Molestiae dolorem alias neque asperiores optio sequi ex quis magni at, in exercitationem eligendi perspiciatis.
+       </div>
+
+       <div>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quam molestias consequuntur temporibus, libero molestiae tempore fugiat cum at. Sunt eveniet, qui repellendus illo ad beatae consectetur id quaerat amet!
+       </div>
+ 
+    </div> 
+</body>
+</html>

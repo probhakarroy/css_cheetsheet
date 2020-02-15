@@ -1,0 +1,232 @@
+/* everything */
+/* reset */
+/* *{ */
+    /* margin: 0em; */
+    /* padding: 0em; */
+/* } */
+
+body{
+    background-color: #f4f4f4;
+    color: #555555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+
+    /* same as above  */
+    font: normal 16px Arial, Helvetica, sans-serif;
+
+    line-height: 1.6em; 
+    margin: 0;
+}
+
+/* Links and buttons */
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover{
+    color: red;
+}
+
+a:active{
+    color: green;
+}
+
+/*
+a:visited{
+    color: black;
+}
+*/
+
+.container{
+    /* you can use 500px but it's not responsive ... hence use percentage  */
+    width: 80%;
+    /* spacing around an element */
+    margin: auto; 
+    overflow: hidden;
+}
+
+.button{
+    padding: 10px 15px;
+    background-color: #333333;
+    color: #fff;
+    border: none;
+}
+
+.button:hover{
+    background-color: red;
+    color: white;
+}
+
+
+
+/* After float elements */
+
+.clr{
+    clear: both;
+}
+
+.box-1{
+    background-color: #333333;
+    color: #fff;
+
+    border: 5px red solid;
+    border-width: 3px;
+    border-style: dotted;
+    padding: 5px;
+}
+
+.box-1 h1{
+    font-family: Tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+}
+
+.box-2{
+    border: 3px dotted #cccccc;
+    padding: 20px;
+    margin : 20px 0;
+}
+
+.categories{
+    border: 1px #cccccc solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.categories h2{
+    text-align: center;
+}
+
+.categories ul{
+    padding: 0;
+    list-style: none;
+}
+
+.categories li{
+    padding-bottom: 6px;
+    border-bottom: dotted 1px #333333;
+    list-style-image: url('../images/check.png');
+}
+
+
+/* Forms */
+
+.my-form{
+    padding: 20px;
+}
+.my-form .form-group{
+    padding-bottom: 15px;
+}
+
+.my-form label{
+    display: block;
+}
+
+.my-form input[type="text"], .my-form textarea{
+    padding: 8px;
+    width: 100%;
+}
+
+.button{
+    padding: 10px 15px;
+    background-color: #333333;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+
+/* CSS Floating and box-sizing */
+
+.block{
+    float: left;
+    width: 33.3%;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    /* IMP --- uses the border and padding and applies width on it. */
+    box-sizing: border-box;
+
+}
+
+#main-block{
+    float: left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    float: right;
+    width: 30%;
+    background-color: #333333;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+
+
+/* CSS Positioning */
+
+.p-box{
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000000;
+    margin-top: 30px;
+    position: relative;
+    background-image: url("../images/bg.jpeg");
+    background-repeat: no-repeat;
+    background-position: 100px 200px;
+    background-position: center center;
+
+}
+
+.p-box h1{
+    position: absolute;
+    top:100px;
+    left: 200px;
+}
+
+.p-box h2{
+    position: absolute;
+    bottom:40px;
+    right: 100px;
+}
+
+.fix-me{
+    position: fixed;
+    bottom: 50px;
+    margin: 10px;
+}
+
+/* pseudo classes */
+
+.my-list li:first-child{
+    background: red;
+}
+
+.my-list li:last-child{
+    background: rgb(0, 17, 255);
+}
+
+.my-list li:nth-child(3){
+    background: yellow;
+}
+
+.my-list li:nth-child(even){
+    background: grey;
+}
+
+/*
+media query --> to make it responsive.
+
+@media(max-width: 700px){
+    styles will be applied till the width is 700px max
+}
