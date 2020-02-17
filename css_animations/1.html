@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        body{
+            padding: 50px;
+        }
+
+        .trigger{
+            width:200px;
+            height:200px;
+            border: 20px solid #999999;
+        }
+
+        .box{
+            display: inline-block;
+            background: pink;
+            width: 200px;
+            height: 200px;
+            
+
+            transition: transform 300ms ease-in-out;
+            pointer-events: none;
+        }
+
+        .trigger#clicked .box{
+            transform: translate(200px, 150px) rotate(20deg);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="trigger" id="yo">
+        <div class="box">
+
+        </div>
+    </div>
+
+    <script>
+        const trigger = document.querySelector('.trigger');
+        let c = 0; 
+        trigger.addEventListener('click', (e) => {
+            if(c%2 === 0)
+                e.target.id = 'clicked';
+            else
+                e.target.id = '';
+            
+            c+=1;
+        })
+    </script>
+</body>
+</html>
